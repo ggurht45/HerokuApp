@@ -2,8 +2,9 @@ var express = require("express");
 var app = express();
 
 
+var port = (process.env.port || 5000)
 //either heroko sets the port, or we do it.
-app.set('port', (process.env.port || 5000));
+app.set('port', port);
 
 //tell app to use current directory for finding static files. also allow the files to run.
 //__dirname evaluates to the current folder name
