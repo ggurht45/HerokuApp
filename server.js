@@ -1,8 +1,9 @@
 var express = require("express");
 var app = express();
 
-//set the port number
-var port = process.env.port || 8080 //either heroko sets the port, or we do it.
+
+//either heroko sets the port, or we do it.
+app.set('port', (process.env.port || 5000));
 
 //tell app to use current directory for finding static files. also allow the files to run.
 //__dirname evaluates to the current folder name
@@ -14,7 +15,7 @@ app.get("/", function(req, res){
   res.render("index");
 }) //<----no semicolon?
 
-//actively listen for requests being made to this server. 
-app.listen(port, function(){
+//actively listen for requests being made to this server.
+app.listen(app.get('port'), function(){
   console.log("app running on port: " + port);
 })

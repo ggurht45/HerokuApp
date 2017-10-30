@@ -1,7 +1,7 @@
 notes:
 
 --goals:
-buy cheap android phone.
+-chant HasbinAllah hu wa ne mal wakeel.
 
 
 -need to make a package.json; manifest file. metadata about the node app.
@@ -15,3 +15,8 @@ buy cheap android phone.
 -check if your app can run locally with heroku. "heroku local web"; heroku automatically puts your code on localhost:5000/
 
 -http server -> same kinda deal as "heroku local web"
+
+
+-heroku create -> to create app.
+
+-heroku logs --tail --app peaceful-caverns-43698 -> to see logs
