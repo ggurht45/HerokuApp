@@ -1,0 +1,17 @@
+notes:
+
+--goals:
+buy cheap android phone.
+
+
+-need to make a package.json; manifest file. metadata about the node app.
+-put client side code in public code.
+-server.js is the backend of our application. it contains the routes and stuff.
+-procfile tells heroku what commands to use.
+
+-set up heroku account. login to it on web to remember pass.
+-install heroku cli tools. login to heroku from command line
+
+-check if your app can run locally with heroku. "heroku local web"; heroku automatically puts your code on localhost:5000/
+
+-http server -> same kinda deal as "heroku local web"
